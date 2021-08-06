@@ -1,9 +1,18 @@
 
 /********  Variablen **********/
 
-const btn = document.getElementById("trigBtn");
+// const btn = document.getElementById("trigBtn");
+const btn = document.body;
+
 let status = true;
 
+/********  Event-Listener **********/
+
+btn.addEventListener("click",actOnBtnEvent);
+
+function actOnBtnEvent() {
+    ausgabe("hi");
+}
 
 
 /********  Business-Logic | Toggle **********/
@@ -15,6 +24,8 @@ function  toggleStatus() {
 
 /********  Änderung in View-Schicht **********/
 
+// Modul: Update der View-Schicht | Test:
+// .. View folgt status
 function updateView() {
     if (status) {
         switchClassName("night");
