@@ -1,21 +1,19 @@
 
 /********  Variablen **********/
 
-// const btn = document.getElementById("trigBtn");
-const btn = document.body;
-
+const btn = document.getElementById("trigBtn");
 let status = true;
 
 /********  Event-Listener **********/
 
-btn.addEventListener("click",actOnBtnEvent);
+// Webseite geladen --> auf (Anfangs)-Zustand umschalten
+window.addEventListener("load",toggleStatus);
 
-function actOnBtnEvent() {
-    ausgabe("hi");
-}
-
+// Klick auf Btn  --> Zustand umschalten
+btn.addEventListener("click",toggleStatus);
 
 /********  Business-Logic | Toggle **********/
+
 // toggleStatus();
 function  toggleStatus() {
     status = !status;
