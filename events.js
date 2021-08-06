@@ -2,10 +2,28 @@
 /********  Variablen **********/
 
 const btn = document.getElementById("trigBtn");
+let status = true;
 
+
+
+/********  Business-Logic | Toggle **********/
+// toggleStatus();
+function  toggleStatus() {
+    status = !status;
+    updateView();
+}
 
 /********  Änderung in View-Schicht **********/
 
+function updateView() {
+    if (status) {
+        switchClassName("night");
+        switchBtnTxt("day");
+    } else {
+        switchClassName("day");
+        switchBtnTxt("night");
+    }
+}
 
 // Modul: Umschaltung Klassenamen | Test:
 // switchClassName("night");
