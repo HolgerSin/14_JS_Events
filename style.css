@@ -1,8 +1,6 @@
 
 /** Styles */
 
-/*
-
 button {
     display: block;
     width: 200px;
@@ -10,21 +8,22 @@ button {
     margin-top: 20px;
 }
 
-/** Day-Mode */
-/* body.day{
-    background-color: #eee;
-} */
 
-/* h1.day{
+/** Day-Mode */
+body.day{
+    background-color: #eee;
+}
+
+h1.day{
     color: #333;
 }
 
 p.day{
     color: #333;
-} */
+}
 
 /** Night-Mode */
-/* body.night{
+body.night{
     background-color: #333;
 }
 
@@ -34,5 +33,5 @@ h1.night{
 
 p.night{
     color: #eee;
-} */
+}
 
